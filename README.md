@@ -1,0 +1,1 @@
+# informatika-ukoly-z-hodin
