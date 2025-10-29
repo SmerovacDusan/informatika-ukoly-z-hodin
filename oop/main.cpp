@@ -19,6 +19,14 @@ class Obdelnik {
         void nastavHodnotuB(int b) {
             this -> b = b;
         }
+
+        int obsah() {
+            return a * b;
+        }
+
+        int obvod() {
+            return 2 * (a + b);
+        }
 };
 
 int main() {
@@ -30,8 +38,10 @@ int main() {
     obdelnik1.tisk();
 
     // práce s pointery, první příklad je lépe čitelnější a používá se častěji
-    pObdelnik1 -> tisk();
-    (*pObdelnik1).tisk();
+    //pObdelnik1 -> tisk();
+    //(*pObdelnik1).tisk();
+
+    cout << "Obvod obdélníku: " << obdelnik1.obvod() << ", obsah obdélníku: " << obdelnik1.obsah() << endl;
 
     return 0;
 }
