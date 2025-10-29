@@ -27,10 +27,26 @@ class Obdelnik {
         int obvod() {
             return 2 * (a + b);
         }
+
+        Obdelnik(int a, int b) {
+            this -> a = a;
+            this -> b = b;
+            cout << "Obdélník vytvořen" << endl;
+        }
+
+        // defaultní konstruktor
+        Obdelnik() {
+
+        }
+
+        // destruktor
+        ~Obdelnik() {
+            cout << "Obdélník smazán." << endl;
+        }
 };
 
 int main() {
-    Obdelnik obdelnik1;
+    Obdelnik obdelnik1(10, 15);
     Obdelnik* pObdelnik1 = &obdelnik1;
 
     obdelnik1.nastavHodnotuA(15);
